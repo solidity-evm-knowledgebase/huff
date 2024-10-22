@@ -30,3 +30,10 @@ huffc {PATH_TO_HUFF_CONTRACT} -b
 
 Example output for simplest contract: `60008060093d393df3`
 
+Macro
+
+Macro are "functions" in Huff. Example:
+
+```huff
+#define macro MAIN() = takes(0) returns(0) {}
+```
