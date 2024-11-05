@@ -36,7 +36,7 @@ huffc {PATH_TO_HUFF_CONTRACT} --bin-runtime
 
 Example output for simplest contract: `60008060093d393df3`
 
-Macro
+## Macro
 
 Macro are "functions" in Huff. Example:
 
