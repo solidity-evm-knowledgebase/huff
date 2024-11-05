@@ -43,3 +43,20 @@ Macro are "functions" in Huff. Example:
 ```huff
 #define macro MAIN() = takes(0) returns(0) {}
 ```
+
+## Function Selector
+
+We can define our functions at the top of the contract, and Huff will take care of converting it to the function selector. 
+Example:
+
+```huff
+/* Interfaces */
+#define function updateHorseNumber(uint256) nonpayable returns()
+#define function readNumberOfHorses() view returns(uint256)
+```
+
+We can then use them like this:
+
+```huff
+__FUNC_SIG(updateHorseNumber)
+```
