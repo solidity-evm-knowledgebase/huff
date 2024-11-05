@@ -60,3 +60,15 @@ We can then use them like this:
 ```huff
 __FUNC_SIG(updateHorseNumber)
 ```
+
+## Storage
+
+Huff abstracts keeping track of storage variables through the FREE_STORAGE_POINTER() keyword.
+
+```huff
+#define constant STORAGE_SLOT0 = FREE_STORAGE_POINTER()
+#define constant STORAGE_SLOT1 = FREE_STORAGE_POINTER()
+#define constant STORAGE_SLOT2 = FREE_STORAGE_POINTER()
+```
+
+
