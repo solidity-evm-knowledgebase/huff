@@ -28,6 +28,12 @@ adding -b will return the bytecode of the contract
 huffc {PATH_TO_HUFF_CONTRACT} -b
 ```
 
+To get only the runtime contract code:
+
+```bash
+huffc {PATH_TO_HUFF_CONTRACT} --bin-runtime
+```
+
 Example output for simplest contract: `60008060093d393df3`
 
 Macro
