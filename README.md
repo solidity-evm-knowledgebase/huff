@@ -44,6 +44,9 @@ Macro are "functions" in Huff. Example:
 #define macro MAIN() = takes(0) returns(0) {}
 ```
 
+takes(0) means it's taking nothing from the stack
+returns(0) means it's returning nothing to the stack
+
 ## Function Selector
 
 We can define our functions at the top of the contract, and Huff will take care of converting it to the function selector. 
